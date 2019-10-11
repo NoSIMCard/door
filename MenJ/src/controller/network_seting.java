@@ -1,5 +1,7 @@
 package controller;
 
+import util.Model;
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -50,9 +52,7 @@ public class network_seting {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JPanel panel = new JPanel();
-		panel.setBounds(0, 0, 262, 578);
-		panel.setLayout(null);
+		JPanel panel = Model.NetworkPanel();
 		frame.getContentPane().add(panel);
 		
 		JLabel label = new JLabel("门禁系统");

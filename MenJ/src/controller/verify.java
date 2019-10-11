@@ -1,5 +1,7 @@
 package controller;
 
+import util.Model;
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -46,9 +48,7 @@ public class verify {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JPanel panel = new JPanel();
-		panel.setLayout(null);
-		panel.setBounds(0, 0, 262, 578);
+		JPanel panel = Model.VerifyPanel();
 		frame.getContentPane().add(panel);
 		
 		JLabel label = new JLabel("门禁系统");

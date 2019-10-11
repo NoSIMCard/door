@@ -1,5 +1,7 @@
 package controller;
 
+import util.Model;
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -45,10 +47,7 @@ public class Hige_setup {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JPanel panel = new JPanel();
-		panel.setLayout(null);
-		panel.setBounds(0, 0, 262, 578);
-		frame.getContentPane().add(panel);
+		JPanel panel = Model.HighSetup();
 		
 		JLabel label = new JLabel("门禁系统");
 		label.setForeground(Color.BLUE);

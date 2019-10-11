@@ -15,6 +15,7 @@ import javax.swing.JTextField;
 public class Time {
 
 //	private JFrame frame;
+	JPanel panel_1 = new JPanel();
 	private JTextField textField;
 	private JTextField textField_1;
 	private JTextField textField_2;
@@ -50,7 +51,7 @@ public class Time {
 	/**
 	 * Initialize the contents of the frame.
 	 */
-	private void initialize(JFrame frame) {
+	public void initialize(JFrame frame) {
 		JPanel panel = Model.TimePanel();
 		frame.getContentPane().add(panel);
 		
@@ -95,7 +96,7 @@ public class Time {
 		button_6.setBounds(32, 66, 197, 49);
 		panel.add(button_6);
 		
-		JPanel panel_1 = new JPanel();
+
 		panel_1.setBounds(707, 263, 293, 315);
 		frame.getContentPane().add(panel_1);
 		panel_1.setLayout(null);

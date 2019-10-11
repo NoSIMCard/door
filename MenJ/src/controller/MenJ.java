@@ -1,5 +1,7 @@
 package controller;
 
+import util.Model;
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -32,8 +34,7 @@ public class MenJ {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					MenJ window = new MenJ();
-					window.frame.setVisible(true);
+					new MenJ();
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -59,10 +60,7 @@ public class MenJ {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 
-		JPanel panel = new JPanel();
-		panel.setBounds(0, 0, 262, 578);
-		panel.setLayout(null);
-		frame.getContentPane().add(panel);
+		JPanel panel = Model.MenJPanel();
 
 		JLabel label = new JLabel("门禁系统");
 		label.setForeground(Color.BLUE);
