@@ -11,6 +11,7 @@ public class Model {
     static final JPanel MenJpanel = new JPanel();
     static final JPanel Networkpanel = new JPanel();
     static final JPanel Verifypanel = new JPanel();
+    static final JPanel BackGroundpanel = new JPanel();
 
     static final JPanel AddUserpanel1 = new JPanel();
     static final JPanel AddUserpanel2 = new JPanel();
@@ -96,5 +97,9 @@ public class Model {
         AdminSettingpanel.setBounds(0, 0, 1000, 578);
         AdminSettingpanel.setLayout(null);
         return AdminSettingpanel;
+    }
+
+    public static JPanel BackGround(){
+        return BackGroundpanel;
     }
 }
