@@ -1,4 +1,3 @@
-import controller.AddUsers;
 import controller.Menu;
 import controller.User;
 import util.Model;
@@ -14,6 +13,7 @@ public class Main {
                     JFrame frame = Model.Jfr();
                     new Menu().initialize(frame);
                     new User().initialize(frame);
+
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

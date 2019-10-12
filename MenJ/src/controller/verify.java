@@ -43,10 +43,7 @@ public class verify {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 1000, 600);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(null);
+		frame = Model.Jfr();
 		
 		JPanel panel = Model.VerifyPanel();
 		frame.getContentPane().add(panel);

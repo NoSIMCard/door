@@ -24,11 +24,35 @@ public class Menu {
         button.setFont(new Font("Lucida Grande", Font.PLAIN, 28));
         button.setBounds(32, 129, 197, 49);
         panel.add(button);
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+//                System.out.println(1);
+                Model.TimePanel().setVisible(false);
+                Model.HighSetup().setVisible(false);
+                Model.VerifyPanel().setVisible(false);
+                Model.MenJPanel().setVisible(false);
+                Model.NetworkPanel().setVisible(false);
+                new User();
+                Model.UserPanel().setVisible(true);
+            }
+        });
 
         JButton button_1 = new JButton("验证设置");
         button_1.setFont(new Font("Lucida Grande", Font.PLAIN, 28));
-        button_1.setBounds(32, 190, 197, 49);
+        button_1.setBounds(33, 190, 197, 49);
         panel.add(button_1);
+        button_1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Model.TimePanel().setVisible(false);
+                Model.UserPanel().setVisible(false);
+                Model.HighSetup().setVisible(false);
+                Model.VerifyPanel().setVisible(false);
+                new verify();
+                Model.VerifyPanel().setVisible(true);
+            }
+        });
 
         JButton button_2 = new JButton("时间设置");
         button_2.setFont(new Font("Lucida Grande", Font.PLAIN, 28));
@@ -37,9 +61,10 @@ public class Menu {
         button_2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println(1);
+//                System.out.println(1);
                 Model.UserPanel().setVisible(false);
                 new Time();
+                Model.TimePanel().setVisible(true);
             }
         });
 
