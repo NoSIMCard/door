@@ -13,7 +13,6 @@ public class Main {
                     JFrame frame = Model.Jfr();
                     new Menu().initialize(frame);
                     new User().initialize(frame);
-
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
